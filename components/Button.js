@@ -20,6 +20,9 @@ const Container = styled('button', {
   boxShadow: '$button',
   borderRadius: '$1',
   outline: 'none',
+  fontWeight: 500,
+  cursor: 'pointer',
+  transition: 'background-color 0.25s ease',
 
   '&:focus': {
     boxShadow: '$buttonFocus',
