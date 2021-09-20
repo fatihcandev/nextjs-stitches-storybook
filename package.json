@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && yarn build-storybook -o public/ui",
+    "build-next": "next build",
+    "build-storybook": "build-storybook -o public/ui",
+    "build": "yarn build-next && yarn build-storybook -o public/ui",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -s public -p 6006",
-    "build-storybook": "build-storybook -o public/ui"
+    "storybook": "start-storybook -s public -p 6006"
   },
   "dependencies": {
     "@stitches/react": "^1.2.0",
