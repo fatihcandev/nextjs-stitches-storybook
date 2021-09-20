@@ -1,0 +1,7 @@
+node_modules
+*.json
+*.config.js
+.next
+yarn.lock
+public/ui
+build
