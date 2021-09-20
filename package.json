@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -s public -p 6006",
+    "build-storybook": "build-storybook -o public/ui"
   },
   "dependencies": {
     "@stitches/react": "^1.2.0",
