@@ -7,9 +7,6 @@
       ],
       "@/styles/*": [
         "styles/*"
-      ],
-      "@/stiches.config": [
-        "stiches.config.js"
       ]
     }
   }
