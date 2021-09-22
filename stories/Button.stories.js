@@ -11,16 +11,24 @@ export default {
   },
 }
 
-const Template = args => <Button {...args}>Button Text</Button>
+const PrimaryTemplate = args => (
+  <Button type="primary" {...args}>
+    Primary
+  </Button>
+)
 
-export const Primary = Template.bind({})
+const SecondaryTemplate = args => (
+  <Button type="secondary" {...args}>
+    Secondary
+  </Button>
+)
+
+export const Primary = PrimaryTemplate.bind({})
 Primary.args = {
-  type: 'primary',
   size: 'xs',
 }
 
-export const Secondary = Template.bind({})
+export const Secondary = SecondaryTemplate.bind({})
 Secondary.args = {
-  type: 'secondary',
   size: 'xs',
 }
