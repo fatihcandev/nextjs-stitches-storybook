@@ -2,8 +2,8 @@ import { styled } from 'stitches.config'
 
 /**
  * Renders a button component
- * @param {string} type - the type of the button. can be primary or secondary.
- * @param {string} size - the type of the button. can be xs, sm, md, lg or xl.
+ * @param {string} type - primary | secondary
+ * @param {string} size - xs | sm | md | lg | xl
  */
 
 const Button = ({ type, size, children, ...props }) => {
