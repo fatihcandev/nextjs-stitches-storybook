@@ -6,12 +6,12 @@ export const {
   globalCss,
   keyframes,
   getCssText,
-  theme,
   createTheme,
-  config,
+  theme,
 } = createStitches({
   theme: {
     colors: {
+      black: '#000000',
       white: '#FFFFFF',
       gray50: '#F9FAFB',
       gray300: '#D1D5DB',
@@ -109,5 +109,12 @@ export const {
     radius: value => ({
       borderRadius: value,
     }),
+  },
+})
+
+export const darkTheme = createTheme('dark-theme', {
+  colors: {
+    primaryButtonBg: '$black',
+    primaryButtonText: '$white',
   },
 })
